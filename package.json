@@ -1,0 +1,14 @@
+{
+  "name": "mcp-filesystem-server",
+  "version": "1.0.0",
+  "description": "A basic MCP filesystem server using SSE.",
+  "main": "mcp-sse.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node mcp-sse.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "express": "^4.18.2"
+  }
+}
