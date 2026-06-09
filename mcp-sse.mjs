@@ -7,6 +7,8 @@ import {
 import express from "express";
 
 const app = express();
+const PORT = parseInt(process.env.PORT || process.argv[2] || "3000", 10);
+
 const server = new Server(
   {
     name: "mcp-filesystem-server",
@@ -59,6 +61,6 @@ app.post("/messages", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Server listening on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
