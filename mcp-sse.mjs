@@ -7,7 +7,7 @@ import {
 import express from "express";
 
 const app = express();
-const PORT = parseInt(process.env.PORT || process.argv[2] || "3000", 10);
+const PORT = parseInt(process.argv[2] || process.env.PORT || "3000", 10);
 
 const server = new Server(
   {
